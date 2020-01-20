@@ -1,0 +1,43 @@
+apiVersion: v1
+entries:
+  hlf-ca:
+  - apiVersion: v1
+    appVersion: 1.4.3
+    created: "2020-01-20T15:48:45.082896Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      tags:
+      - postgres-database
+      version: x.x.x
+    - condition: mysql.enabled
+      name: mysql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      tags:
+      - mysql-database
+      version: x.x.x
+    description: Hyperledger Fabric Certificate Authority chart (these charts are
+      created by AID:Tech and are currently not directly associated with the Hyperledger
+      project)
+    digest: 0b0ff8fe69d4d8020c03aa4e71db6118cf0cde8f208d7653003fbcd920a5fd5c
+    home: http://hyperledger-fabric-ca.readthedocs.io
+    icon: https://www.hyperledger.org/wp-content/uploads/2018/04/fabric-logo.png
+    keywords:
+    - blockchain
+    - hyperledger
+    - fabric
+    maintainers:
+    - email: sasha@aid.technology
+      name: alexvicegrab
+    - email: inzamam@aid.technology
+      name: inzamam-iqbal
+    - email: diego@aid.technology
+      name: dbandin
+    name: hlf-ca
+    sources:
+    - https://github.com/hyperledger/fabric-ca
+    urls:
+    - hlf-ca-1.2.0.tgz
+    version: 1.2.0
+generated: "2020-01-20T15:48:45.075845Z"
