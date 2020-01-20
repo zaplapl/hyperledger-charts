@@ -3,7 +3,7 @@ entries:
   hlf-ca:
   - apiVersion: v1
     appVersion: 1.4.3
-    created: "2020-01-20T15:48:45.082896Z"
+    created: "2020-01-20T16:04:32.015293Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -20,7 +20,7 @@ entries:
     description: Hyperledger Fabric Certificate Authority chart (these charts are
       created by AID:Tech and are currently not directly associated with the Hyperledger
       project)
-    digest: 0b0ff8fe69d4d8020c03aa4e71db6118cf0cde8f208d7653003fbcd920a5fd5c
+    digest: 74c5d705990acc947164721b7ad0cda38dfcaef6c28140d07e7173baab57b6c2
     home: http://hyperledger-fabric-ca.readthedocs.io
     icon: https://www.hyperledger.org/wp-content/uploads/2018/04/fabric-logo.png
     keywords:
@@ -40,4 +40,4 @@ entries:
     urls:
     - hlf-ca-1.2.0.tgz
     version: 1.2.0
-generated: "2020-01-20T15:48:45.075845Z"
+generated: "2020-01-20T16:04:32.01007Z"
