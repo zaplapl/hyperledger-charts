@@ -78,6 +78,8 @@ spec:
               cp /var/hyperledger/ca_config/ca.yaml $FABRIC_CA_HOME/fabric-ca-server-config.yaml
               sed -i "s|<<<ADMIN>>>|${CA_ADMIN}|g" ${FABRIC_CA_HOME}/fabric-ca-server-config.yaml
               sed -i "s|<<<ADMINPW>>>|${CA_PASSWORD}|g" $FABRIC_CA_HOME/fabric-ca-server-config.yaml
+              sed -i "s|<<<NODE>>>|${ORG_NODE}|g" $FABRIC_CA_HOME/fabric-ca-server-config.yaml
+              sed -i "s|<<<NODEPW>>>|${NODE_PASSWORD}|g" $FABRIC_CA_HOME/fabric-ca-server-config.yaml
               sed -i "s|<<<DB_TYPE>>>|${DB_TYPE:-"sqlite3"}|g" $FABRIC_CA_HOME/fabric-ca-server-config.yaml
               sed -i "s|<<<DB_DATASOURCE>>>|${DB_DATASOURCE:-"fabric-ca-server.db"}|g" $FABRIC_CA_HOME/fabric-ca-server-config.yaml
 

@@ -95,6 +95,14 @@ data:
               hf.GenCRL: true
               hf.Registrar.Attributes: "*"
               hf.AffiliationMgr: true
+         - name: <<<NODE>>>
+           pass: <<<NODEPW>>>
+           type: peer
+           affiliation ""
+           attrs:
+              hf.Revoker: true
+              hf.GenCRL: true
+              hf.AffiliationMgr: true
     #############################################################################
     #  Database section
     #  Supported types are: "sqlite3", "postgres", and "mysql".
